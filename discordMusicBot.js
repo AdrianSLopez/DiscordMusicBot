@@ -1,8 +1,13 @@
+//The Three packages needed:
+    // npm install discord.js
+    // npm install @discordjs/opus <-- The audio source, this is whats going to help play the sound of the yt video
+    // npm install ytdl-core@latest <-- This downloads the youtube video from the link
+
 const Discord = require('discord.js');
 const ytdl = require("ytdl-core");
 
 const prefix = "!";
-//const token = TOKEN IS PRIVATE;
+const token = "DiscordBot Token Goes Here";
 const bot = new Discord.Client();
 
 bot.once('ready', ()=>{
@@ -19,11 +24,13 @@ bot.on('message', message =>{
 
         const voiceChannel = message.member.voice.channel;
 
+        //This if statement checks and lets the user know to join a server.
         if(!voiceChannel){
             message.reply('You need to be in a voice channel to play or stop a youtube audio only video');
             return;
         }
 
+        //Checks if no command after 'youtube' is given.
         if(args[0] == null || args[0]== undefined){
             message.reply("Provide a command. Valid commands are: 'play' or 'stop'. " );
             return;
@@ -40,17 +47,11 @@ bot.on('message', message =>{
 
                 //If the the link is okay and you are in a voice channel then the bot joins your channel..
                 voiceChannel.join().then(connection =>{
-                    console.log("joining channel...");
                     // This bottom line gets the provided url code and downloads the audioonly
-                    var dispatcher = connection.play(ytdl(args[1], {filter: 'audioonly'}));
-                    //It should start playing by now, a message will appear in the terminal saying 'music is starting'.
-                    dispatcher.on("start", ()=>{
-                        console.log("music is starting...");
-                    });
+                    connection.play(ytdl(args[1], {filter: 'audioonly'}));                   
                 });
                 break;
 
-            //Case 'stop' basically leaves the channel.
             case 'stop':
 
                 //Bot just leaves

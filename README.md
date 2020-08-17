@@ -4,6 +4,7 @@ Description:
 
 A Discord Bot that is able to join a voice Channel and play a youtube video audio only. The bot is written in JavaScript. 
 You need your own bot token, and assign it to the const token variable in line 5 of the .js file.
+How to get a Bot Token: https://www.writebots.com/discord-bot-token/#:~:text=%20Generating%20Your%20Token%20Step-by-Step%20%201%20Go,You%E2%80%99ve%20created%20your%20very%20first%20Discord...%20More%20
 
 Discord Bot Commands:
 !youtube o ryt play *youtubelink of a video*

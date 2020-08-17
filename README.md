@@ -25,6 +25,7 @@ To install them, in the terminal/command line type the press enter:
 - npm install ytdl-core@latest
 
 To start up the bot: 
+
 In the terminal/Command Line type: node discordMusicBot.js
 
 

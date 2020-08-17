@@ -1,0 +1,20 @@
+{
+    "name": "discordMusicBot",
+    "version": "1.0.0",
+    "main": "discordMusicBot.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sa2urn/DiscordMusicBot.git"
+    },
+    "author": "Adrian Salgado Lopez",
+    "license": "MIT",
+    "description": "Music bot only",
+    "dependencies": {
+        "@discordjs/opus": "^0.3.2",
+        "discord.js": "^12.2.0",
+        "ytdl-core": "^3.2.0"
+    }
+}

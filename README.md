@@ -22,7 +22,7 @@ To run the bot, three packages are needed to be installed.
 To install them, in the terminal/command line type the press enter:
 - npm install discord.js
 - npm install @discordjs/opus
-- npm install 
+- npm install ytdl-core@latest
 
 To start up the bot: 
 

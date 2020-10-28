@@ -18,9 +18,10 @@ Node.js 12.18.1
 
 Compile Instruction in command line:
 
-To run the bot, three packages are needed to be installed. 
+To run the bot, four packages are needed to be installed. 
 To install them, in the terminal/command line type the press enter:
 - npm install discord.js
+- npm install ffmpeg-static
 - npm install @discordjs/opus
 - npm install ytdl-core@latest
 

@@ -8,8 +8,8 @@ You need your own bot token, and assign it to the const token variable in line 5
 How to get a Bot Token: https://www.writebots.com/discord-bot-token/#:~:text=%20Generating%20Your%20Token%20Step-by-Step%20%201%20Go,You%E2%80%99ve%20created%20your%20very%20first%20Discord...%20More%20
 
 Discord Bot Commands:
-!youtube or yt play *youtubelink of a video*
-!youtube or yt stop
+!youtube or !yt play *youtubelink*
+!youtube or !yt stop
 
 Compile Requirement:
 

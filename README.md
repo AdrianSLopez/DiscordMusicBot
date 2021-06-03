@@ -1,5 +1,7 @@
 # DiscordMusicBot
 
+![](https://github.com/sa2urn/DiscordMusicBot/blob/master/DiscordMusicBot.gif)
+
 Description:
 
 A Discord Bot that is able to join a voice Channel and play a youtube video audio only. The bot is written in JavaScript. 
